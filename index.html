@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lynx browser on WSL</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <style>
+    body {max-width:800px; margin:0 auto; padding:5px;}
+    img {display:block; max-width:100%; height:auto; margin:2em auto;}
+    h1 {font-size:1em;}
+    a:link {color:blue; text-decoration:none;}
+    a:visited {color:blue; text-decoration:none;}
+    a:hover {color:blue; text-decoration:underline;}
+    a:active {color:red; text-decoration:underline;}
+  </style>
+</head>
+<body>
+
+<h1><a href="https://punchedcards.github.io">punchedcards.github.io</a></h1>
+
+
+<h2>Install Lynx browser on Windows Subsystem for Linux</h2>
+
+
+<h3>Install Windows Subsystem for Linux (WSL)</h3>
+
+<p>Press the Windows Start button.</p>
+
+<p>In the search box, type <code>powershell</code> and press <strong>Enter</strong>.</p>
+
+<p>From the available options, select <strong>Run as Administrator</strong>.</p>
+
+<p>In the PowerShell window, enter the command:</p>
+
+<blockquote><code>wsl --install</code></blockquote>
+
+<p>This command enables the features necessary to run WSL.</p>
+
+<p>When prompted at the end of the install, restart your PC.</p>
+
+
+<h3>Install Ubuntu</h3>
+
+<p>At one point, installing WSL automatically installed Ubuntu, but now it seems you have to install Ubuntu manually.</p>
+
+<p>Again launch PowerShell with <strong>Run as Administrator</strong>. Then enter the command:</p>
+
+<blockquote><code>wsl --install -d Ubuntu</code></blockquote>
+
+<p>When you launch Ubuntu Linux, you will be prompted to create a user account and password.</p>
+
+<p>Now you can launch Ubuntu like any other program from your Windows Start menu.</p>
+
+<p>When you go into Ubuntu for the first time after installing it, update all the software packages it was distributed with:</p>
+
+<blockquote><code>sudo apt update &amp;&amp; sudo apt upgrade -y</code></blockquote>
+
+
+<h3>Install Lynx browser</h3>
+
+<p>If you have not already done so recently, update your existing packages:</p>
+
+<blockquote><code>sudo apt update &amp;&amp; sudo apt upgrade -y</code></blockquote>
+
+<p>Install Lynx browser:</p>
+
+<blockquote><code>sudo apt install -y lynx</code></blockquote>
+
+<p>Launch Lynx from the command line:</p>
+
+<blockquote><code>lynx</code></blockquote>
+
+<p>Various keys are available in Lynx browser to help you navigate the web, including these basic ones:</p>
+
+<ul>
+<li><strong>g</strong> &ndash; go to a new URL</li>
+<li>Tab &ndash; Move between the links on this page</li>
+<li><strong>/</strong>&lt;<em>string</em>&gt; (without the angle brackets) &ndash; search for &lt;<em>string</em>&gt; on this page</li>
+<li>Spacebar &ndash; Page down</li>
+<li>Right arrow or <strong>Enter</strong> &ndash; Follow this link</li>
+<li>Left arrow &ndash; back one page</li>
+<li><strong>q</strong> &ndash; quit Lynx browser</li>
+</ul>
+
+<h2>Also on this site</h2>
+
+<p><a href="3x-ui.html">3X-UI VLESS Reality 2027 VPS self-hosted server tutorial</a></p>
+
+</body>
+</html>
