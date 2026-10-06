@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YT-DLP on Windows</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <style>
+    body {max-width:800px; margin:0 auto; padding:5px;}
+    img {display:block; max-width:100%; height:auto; margin:2em auto;}
+    h1 {font-size:1em;}
+    a:link {color:blue; text-decoration:none;}
+    a:visited {color:blue; text-decoration:none;}
+    a:hover {color:blue; text-decoration:underline;}
+    a:active {color:red; text-decoration:underline;}
+  </style>
+</head>
+<body>
+
+<h1><a href="https://punchedcards.github.io">punchedcards.github.io</a></h1>
+
+
+<h2>Install and run yt-dlp on Windows</h2>
+
+<p><em>October 6, 2026</em></p>
+
+
+<h3>Download executables</h3>
+
+<ol>
+<li>Open a browser.</li>
+<li>Navigate to <a href="https://github.com/yt-dlp/yt-dlp/releases/latest" target="_blank">https://github.com/yt-dlp/yt-dlp/releases/latest</a>.</li>
+<li>Download the Windows executable <code>yt-dlp.exe</code>.</li>
+<li>Navigate to <a href="https://github.com/yt-dlp/FFmpeg-Builds/releases" target="_blank">https://github.com/yt-dlp/FFmpeg-Builds/releases</a>.</li>
+<li>Click the link <code>win64-gpl</code>.</li>
+<li>This will download a file with a name that looks like <code>ffmpeg-N-xxxxxx-yyyyyyyyyy-win64-gpl.zip</code>.</li>
+<li>Close your browser.</li>
+</ol>
+
+<h3>Create and populate yt-dlp directory</h3>
+
+<ol>
+<li>Create a directory <code>C:\yt-dlp</code>.</li>
+<li>Copy <code>yt-dlp.exe</code> from your downloads directory into <code>C:\yt-dlp</code>.</li>
+<li>Extract the zip file <code>ffmpeg-N-xxxxxx-yyyyyyyyyy-win64-gpl.zip</code>.</li>
+<li>From inside the extracted directory's <code>bin</code> subdirectory, copy <code>ffmpeg.exe</code> into <code>C:\yt-dlp</code>.</li>
+</ol>
+
+<h3>Add yt-dlp to execution path</h3>
+
+<ol>
+<li>In the Windows search box, type <code>environment</code>.</li>
+<li>Open the Control Panel at System Properties.</li>
+<li>Click <strong>Environment Variables</strong>.</li>
+<li>Select <strong>Path</strong>.</li>
+<li>Click <strong>Edit</strong>.</li>
+<li>Click <strong>New</strong>.</li>
+<li>Add <code>C:\yt-dlp</code>.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+<li>Restart your PC (or just log out and log in to your user id again).</li>
+</ol>
+
+<h3>Verify installation</h3>
+
+<ol>
+<li>In the Windows search box, type <code>cmd</code>.</li>
+<li>Open a Command Promp windows.</li>
+<li>Enter the command <code>yt-dlp --version</code>.</li>
+<li>You should see a version number of the form <code>yyyy.mm.dd</code>.</li>
+</ol>
+
+<h3>Run yt-dlp on Windows</h3>
+
+<ol>
+<li>In the Windows search box, type <code>cmd</code>.</li>
+<li>Open a Command Promp windows.</li>
+<li>Change into your Downloads folder with the command <code>cd Downloads</code>.</li>
+<li>Enter the command <code>yt-dlp --F &lt;<em>youtube-url</em>&gt;</code> (without the angle brackets).</li>
+<li>You should see a list of available format numbers.</li>
+<li>Pick the format number that best suits your requirements.</li>
+<li>Enter the command <code>yt-dlp --f &lt;<em>your-chosen-format-number</em>&gt; &lt;<em>youtube-url</em>&gt;</code> (without the angle brackets).
+</ol>
+
+</body>
+</html>
